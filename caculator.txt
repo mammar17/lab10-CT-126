@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main(){
+
+int press;
+printf("-------calculator--------\n");
+
+while(1){
+if(press==1){
+int a,b,choice;
+printf("enter two numbers \n");
+scanf("%d %d",&a,&b);
+
+printf("enter choice \n1.add\n2.multiply\n3.divide\n4.substract\n");
+scanf("%d",&choice);
+
+switch(choice){
+
+case 1:
+printf("you chose addition\nadd=%d",a+b);
+break;
+
+case 2:
+printf("you chose multiply\nmultiply=%d",a*b);
+break;
+
+case 4:
+printf("you chose subtraction\nsubtract=%d",a-b);
+break;
+
+case 3:
+printf("you chose division\ndivision=%d",a/b);
+break;
+
+default:
+printf("invalid choice\ntry again\n");
+
+}  
+     }   
+      }
+return 0;   
+}
